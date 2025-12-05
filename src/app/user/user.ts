@@ -9,6 +9,7 @@ import {
   signal,
 } from '@angular/core';
 import { Users } from './user.model';
+import { Card } from "../shared/card/card";
 
 // const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
 
@@ -20,7 +21,7 @@ import { Users } from './user.model';
 
 @Component({
   selector: 'app-user',
-  imports: [],
+  imports: [Card],
   templateUrl: './user.html',
   styleUrl: './user.css',
 })
